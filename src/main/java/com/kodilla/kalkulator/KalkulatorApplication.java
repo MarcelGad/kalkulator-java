@@ -8,7 +8,13 @@ public class KalkulatorApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(KalkulatorApplication.class, args);
-	}
+		Calculator calculator = new Calculator();
 
+		int sum;
+        sum = calculator.add(10,8);
+        System.out.println(sum);
+
+		int diffrence = calculator.substract(18,4);
+		System.out.println(diffrence);
+	}
 }
